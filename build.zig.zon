@@ -1,0 +1,20 @@
+.{
+    .name = .myworld,
+    .version = "0.0.0",
+    .fingerprint = 0xa775480c6af4d1ee,
+    .minimum_zig_version = "0.17.0",
+    .dependencies = .{
+        .raylib_zig = .{
+            .path = "zig-pkg/raylib_zig-6.0.0-KE8REDSmBQAbyUv_Fh71wgvhQSP2zsmVxtPRLzCgIXWK",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "resources",
+        // For example...
+        //"LICENSE",
+        //"README.md",
+    },
+}

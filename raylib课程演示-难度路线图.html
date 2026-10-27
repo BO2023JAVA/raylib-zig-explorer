@@ -1,0 +1,110 @@
+<html style="margin:0;padding:0;">
+<title>raylib 课程演示 · 按难度进阶路线图</title>
+<div style="width:100%;box-sizing:border-box;font-family:'Segoe UI','Microsoft YaHei',system-ui,sans-serif;background:#f7f8fa;padding:24px 28px;">
+  <h1 style="margin:0 0 6px;font-size:22px;color:#1f2328;">raylib 课程演示 · 按难度进阶路线图</h1>
+  <p style="margin:0 0 22px;font-size:14px;color:#57606a;">难度从低到高共 6 级（★1 → ★★★★★★）。已做的 3 个演示（drawLineEx / drawCircleV / drawRectangleRec）都在第 1 级。每个演示实现一个 <code>pg.Demo</code>，照这个顺序往下加就行。</p>
+
+  <!-- 图例 -->
+  <div style="display:flex;flex-wrap:wrap;gap:14px;margin:0 0 20px;font-size:13px;color:#24292f;">
+    <span>模块标签：</span>
+    <span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span>
+    <span style="background:#e6f7ec;color:#168c3f;border-radius:4px;padding:2px 8px;">shapes</span>
+    <span style="background:#fdf3e3;color:#b45309;border-radius:4px;padding:2px 8px;">textures</span>
+    <span style="background:#ede9fe;color:#6d28d9;border-radius:4px;padding:2px 8px;">text</span>
+    <span style="background:#fee2e2;color:#b91c1c;border-radius:4px;padding:2px 8px;">audio</span>
+    <span style="background:#e0e7ff;color:#3730a3;border-radius:4px;padding:2px 8px;">models</span>
+    <span style="background:#fff7d6;color:#92400e;border-radius:4px;padding:2px 8px;">shaders</span>
+    <span style="background:#d1faf0;color:#0f766e;border-radius:4px;padding:2px 8px;">raygui</span>
+  </div>
+
+  <!-- 难度阶梯：每级一行 -->
+  <div style="display:flex;flex-direction:column;gap:14px;">
+
+    <div style="display:flex;gap:14px;align-items:stretch;">
+      <div style="flex:0 0 150px;box-sizing:border-box;border-radius:10px;padding:14px;color:#fff;background:#2ea44f;">
+        <div style="font-size:20px;font-weight:700;">第 1 级</div>
+        <div style="font-size:13px;opacity:.95;">★</div>
+        <div style="font-size:12px;margin-top:8px;">打地基<br>开窗 + 基础图元</div>
+      </div>
+      <div style="flex:1;box-sizing:border-box;border-radius:10px;background:#fff;border:1px solid #e4e7ec;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:#24292f;">
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span> <b>① 开窗主循环</b> InitWindow / WindowShouldClose / BeginDrawing·EndDrawing</div>
+        <div><span style="background:#e6f7ec;color:#168c3f;border-radius:4px;padding:2px 8px;">shapes</span> <b>② 画线</b> <span style="background:#ffeef0;border-radius:4px;padding:1px 5px;color:#cf222e;font-weight:600;">已做</span> DrawLineEx</div>
+        <div><span style="background:#e6f7ec;color:#168c3f;border-radius:4px;padding:2px 8px;">shapes</span> <b>③ 画圆</b> <span style="background:#ffeef0;border-radius:4px;padding:1px 5px;color:#cf222e;font-weight:600;">已做</span> DrawCircleV</div>
+        <div><span style="background:#e6f7ec;color:#168c3f;border-radius:4px;padding:2px 8px;">shapes</span> <b>④ 画矩形/三角</b> <span style="background:#ffeef0;border-radius:4px;padding:1px 5px;color:#cf222e;font-weight:600;">已做</span> DrawRectangleRec</div>
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span> <b>⑤ 清屏 / FPS</b> ClearBackground / GetFPS</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:14px;align-items:stretch;">
+      <div style="flex:0 0 150px;box-sizing:border-box;border-radius:10px;padding:14px;color:#fff;background:#9a6700;">
+        <div style="font-size:20px;font-weight:700;">第 2 级</div>
+        <div style="font-size:13px;opacity:.95;">★★</div>
+        <div style="font-size:12px;margin-top:8px;">玩结构<br>坐标 + 文字 + 输入</div>
+      </div>
+      <div style="flex:1;box-sizing:border-box;border-radius:10px;background:#fff;border:1px solid #e4e7ec;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:#24292f;">
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span> <b>⑥ 结构体</b> Vector2 / Rectangle / Color 怎么用</div>
+        <div><span style="background:#ede9fe;color:#6d28d9;border-radius:4px;padding:2px 8px;">text</span> <b>⑦ 画文字</b> DrawText / DrawTextEx / MeasureTextEx</div>
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span> <b>⑧ 键盘输入</b> IsKeyDown / IsKeyPressed</div>
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span> <b>⑨ 鼠标输入</b> GetMousePosition / IsMouseButtonPressed</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:14px;align-items:stretch;">
+      <div style="flex:0 0 150px;box-sizing:border-box;border-radius:10px;padding:14px;color:#fff;background:#bf8700;">
+        <div style="font-size:20px;font-weight:700;">第 3 级</div>
+        <div style="font-size:13px;opacity:.95;">★★★</div>
+        <div style="font-size:12px;margin-top:8px;">会动<br>纹理 + 动画 + 碰撞</div>
+      </div>
+      <div style="flex:1;box-sizing:border-box;border-radius:10px;background:#fff;border:1px solid #e4e7ec;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:#24292f;">
+        <div><span style="background:#fdf3e3;color:#b45309;border-radius:4px;padding:2px 8px;">textures</span> <b>⑩ 贴图</b> LoadTexture / DrawTexture</div>
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span> <b>⑪ 动起来</b> 用 Demo.update 做每帧移动</div>
+        <div><span style="background:#e6f7ec;color:#168c3f;border-radius:4px;padding:2px 8px;">shapes</span> <b>⑫ 碰撞检测</b> CheckCollisionRecs / CheckCollisionCircles</div>
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span> <b>⑬ 键盘控制小球</b> 输入 + 动画 + 边界反弹（综合）</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:14px;align-items:stretch;">
+      <div style="flex:0 0 150px;box-sizing:border-box;border-radius:10px;padding:14px;color:#fff;background:#d0350f;">
+        <div style="font-size:20px;font-weight:700;">第 4 级</div>
+        <div style="font-size:13px;opacity:.95;">★★★★</div>
+        <div style="font-size:12px;margin-top:8px;">有声有色<br>音频 + 计时 + 随机</div>
+      </div>
+      <div style="flex:1;box-sizing:border-box;border-radius:10px;background:#fff;border:1px solid #e4e7ec;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:#24292f;">
+        <div><span style="background:#fee2e2;color:#b91c1c;border-radius:4px;padding:2px 8px;">audio</span> <b>⑭ 音频初始化</b> InitAudioDevice / LoadSound / PlaySound</div>
+        <div><span style="background:#fee2e2;color:#b91c1c;border-radius:4px;padding:2px 8px;">audio</span> <b>⑮ 背景音乐</b> LoadMusicStream / UpdateMusicStream</div>
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span> <b>⑯ 计时与随机</b> GetFrameTime / GetRandomValue</div>
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">core</span> <b>⑰ 简单粒子</b> 多对象数组 + 随机运动</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:14px;align-items:stretch;">
+      <div style="flex:0 0 150px;box-sizing:border-box;border-radius:10px;padding:14px;color:#fff;background:#b62324;">
+        <div style="font-size:20px;font-weight:700;">第 5 级</div>
+        <div style="font-size:13px;opacity:.95;">★★★★★</div>
+        <div style="font-size:12px;margin-top:8px;">立体<br>3D 相机与模型</div>
+      </div>
+      <div style="flex:1;box-sizing:border-box;border-radius:10px;background:#fff;border:1px solid #e4e7ec;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:#24292f;">
+        <div><span style="background:#e0e7ff;color:#3730a3;border-radius:4px;padding:2px 8px;">models</span> <b>⑱ 3D 相机</b> Camera3D / BeginMode3D·EndMode3D</div>
+        <div><span style="background:#e0e7ff;color:#3730a3;border-radius:4px;padding:2px 8px;">models</span> <b>⑲ 3D 图元</b> DrawCube / DrawSphere</div>
+        <div><span style="background:#e0e7ff;color:#3730a3;border-radius:4px;padding:2px 8px;">models</span> <b>⑳ 载入模型</b> LoadModel / DrawModel</div>
+        <div><span style="background:#e0e7ff;color:#3730a3;border-radius:4px;padding:2px 8px;">models</span> <b>㉑ 第一人称视角</b> UpdateCamera 跟着走</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:14px;align-items:stretch;">
+      <div style="flex:0 0 150px;box-sizing:border-box;border-radius:10px;padding:14px;color:#fff;background:#82071e;">
+        <div style="font-size:20px;font-weight:700;">第 6 级</div>
+        <div style="font-size:13px;opacity:.95;">★★★★★★</div>
+        <div style="font-size:12px;margin-top:8px;">成瘾<br>着色器 + UI + 做游戏</div>
+      </div>
+      <div style="flex:1;box-sizing:border-box;border-radius:10px;background:#fff;border:1px solid #e4e7ec;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:#24292f;">
+        <div><span style="background:#fff7d6;color:#92400e;border-radius:4px;padding:2px 8px;">shaders</span> <b>㉒ 着色器</b> LoadShader / BeginShaderMode</div>
+        <div><span style="background:#d1faf0;color:#0f766e;border-radius:4px;padding:2px 8px;">raygui</span> <b>㉓ UI 控件</b> 你现在的参数面板就是它</div>
+        <div><span style="background:#e8f0fe;color:#1a56db;border-radius:4px;padding:2px 8px;">综合</span> <b>㉔ 整合成小游戏</b> 碰撞 + 得分 + 场景 + 重开</div>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin:18px 0 0;font-size:12px;color:#6e7781;">提示：想在教学窗口里看到"按难度排序"，就给 Demo 加个 <code>difficulty</code> 字段，把 demos 数组按它排一下，左侧列表就自动从易到难了。示意图，非 raylib 官方课程。</p>
+</div>
+</html>

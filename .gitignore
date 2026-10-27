@@ -1,0 +1,6 @@
+zig-out/
+.zig-cache/
+audit*.log
+favorites.txt
+export_*.zig
+Hello, raylib!/
